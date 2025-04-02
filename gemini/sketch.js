@@ -65,7 +65,7 @@ async function mousePressed() {
 
   //----------------Not Working ----------------------//
   //not sure if it is due to other aspects other than code
-  //keep geeting Multiple readback
+  //keep geeting Multiple readback with no response
 
   //AI Generated: updated to accomdate with tagging images
 
