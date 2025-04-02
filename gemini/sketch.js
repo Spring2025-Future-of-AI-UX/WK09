@@ -1,10 +1,10 @@
 let mImg;
 let mCaption = "";
-let mTag = {};
+//let mTag = {};
 
 
 function preload() {
-  mImg = loadImage("../../imgs/Img6.jpg");
+  mImg = loadImage("../../imgs/Img17.jpg");
   //mImg2 = loadImage("../../imgs/Img6.jpg");
 }
 
@@ -20,7 +20,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   textSize(20);
   //need to resize in order for Gemini to work
-  mImg.resize(mImg.width/10, mImg.height/10)
+  mImg.resize(mImg.width/5, mImg.height/5)
 
   //attemp in adding second img was unsuccessful
   //mImg2.resize(mImg2.width/10, mImg2.height/10)
