@@ -4,7 +4,7 @@ import whisper
 model = whisper.load_model("tiny")
 
 # Path to the audio file
-audio_file = "D:/Future_of_AI_UX/WK09/audio/sample_audio2.wav"
+audio_file = "D:/Future_of_AI_UX/WK09/audio/my_recording.mp3"
 
 # Transcribe the audio file
 result = model.transcribe(audio_file)
