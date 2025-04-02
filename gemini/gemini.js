@@ -13,5 +13,14 @@ async function generateContent(prompt, model = "gemini-1.5-pro") {
     },
   });
   let json = await res.json();
-  return json.candidates[0].content.parts[0].text;
+
+  // AI generated
+  // Safeguard: Check if candidates exist and are not empty (used for detact ffree uses)
+  if (json && json.candidates && json.candidates.length > 0) {
+    return json.candidates[0].content.parts[0].text;
+  } else {
+    console.error("Invalid API response:", json);
+    return "Error: Unable to generate content.";  // Provide a fallback response
+  }
 }
+
